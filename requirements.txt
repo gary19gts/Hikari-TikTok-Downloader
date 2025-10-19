@@ -1,0 +1,12 @@
+# Hikari TikTok Downloader Dependencies
+
+# GUI Framework
+customtkinter>=5.2.0
+pillow>=10.0.0
+
+# Download Engines
+yt-dlp>=2023.10.13
+requests>=2.31.0
+
+# Utilities
+pathlib2>=2.3.7

@@ -1,616 +1,177 @@
-<div align="center">
-
 # 🎬 Hikari TikTok Downloader
 
-
-
-### Modern TikTok Video Downloader with Clean UI
-
-<p align="center">
-  <strong>Download TikTok videos in highest quality • Watermark-free • Fast & Reliable</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/version-1.2.0-blue?style=for-the-badge" alt="Version">
-  <img src="https://img.shields.io/badge/python-3.7+-green?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/license-Dual%20(AGPL%20v3%20%2F%20Proprietary)-orange?style=for-the-badge" alt="License">
-  <img src="https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=for-the-badge" alt="Platform">
-</p>
-
-<p align="center">
-  <a href="#-features">Features</a> •
-  <a href="#-quick-start">Quick Start</a> •
-  <a href="#-installation">Installation</a> •
-  <a href="#-usage">Usage</a> •
-  <a href="#-documentation">Documentation</a> •
-  <a href="#-support">Support</a>
-</p>
-
----
-
-</div>
-
-## 🌟 Why Hikari?
-
-<table>
-<tr>
-<td width="50%">
-
-### 🎯 **Simple & Intuitive**
-Clean, modern interface inspired by TikTok's design. No complicated settings - just paste, click, and download!
-
-### ⚡ **Lightning Fast**
-Dual engine technology ensures maximum speed and reliability. Downloads complete in seconds.
-
-</td>
-<td width="50%">
-
-### 💎 **Best Quality**
-Always downloads in the highest available quality (up to 1080p). No watermarks with yt-dlp engine.
-
-### 🔒 **Privacy First**
-No data collection, no tracking, no analytics. Your downloads are completely private.
-
-</td>
-</tr>
-</table>
-
----
+A modern TikTok content downloader with a clean and intuitive interface featuring TikTok-themed design.
 
 ## ✨ Features
 
-<div align="center">
-
-| Feature | Description |
-|---------|-------------|
-| 🎨 **Modern TikTok-Themed UI** | Beautiful interface with official TikTok colors (Pink & Cyan) |
-| 🚀 **Dual Engine Technology** | Choose between yt-dlp (recommended) or TikTok API engine |
-| 💎 **Best Quality Downloads** | Automatically downloads in highest quality (up to 1080p) |
-| 🎯 **Watermark-Free** | Remove TikTok watermarks using yt-dlp engine |
-| ⚡ **Real-time Progress** | Live download progress with speed indicators |
-| 🔍 **Smart URL Detection** | Automatic validation and content detection |
-| 💾 **Settings Persistence** | Remembers your preferences and last download location |
-| 🔄 **One-Click Updates** | Update all libraries with a single button |
-| 🌍 **Cross-Platform** | Works on Windows, macOS, and Linux |
-| 🎨 **TikTok Cyan Console** | Beautiful colored console output (#00E0B7) |
-
-</div>
-
----
+- **Modern TikTok-Themed UI** - Clean interface with TikTok colors and modern design elements
+- **Multiple Download Engines** - Choose between yt-dlp (recommended) and TikTok API
+- **Best Quality Downloads** - Always downloads in the highest available quality (up to 1080p)
+- **Watermark-Free Downloads** - Download content without TikTok watermarks using yt-dlp engine
+- **Real-time Progress** - Live download progress with speed indicators
+- **Content Detection** - Automatic URL validation and content detection
+- **Automatic Library Updates** - One-click updates for all dependencies
+- **Responsive Design** - Scales beautifully across different screen resolutions
 
 ## 🚀 Quick Start
 
-<div align="center">
-
-### Three Simple Steps to Download TikTok Videos
-
-</div>
-
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 1️⃣ Install
-```bash
-python setup.py
-```
-<sub>Installs all dependencies automatically</sub>
-
-</td>
-<td align="center" width="33%">
-
-### 2️⃣ Launch
-```bash
-python main.py
-```
-<sub>Or double-click run.bat on Windows</sub>
-
-</td>
-<td align="center" width="33%">
-
-### 3️⃣ Download
-**Paste URL → Click Download**
-<sub>That's it! Video saved to Downloads folder</sub>
-
-</td>
-</tr>
-</table>
-
----
-
-## 📦 Installation
-
 ### Prerequisites
 
-<div align="center">
+- Python 3.7 or higher
+- Windows, macOS, or Linux
 
-| Requirement | Version | Download |
-|-------------|---------|----------|
-| 🐍 Python | 3.7+ | [python.org](https://python.org) |
-| 💾 Disk Space | 50MB+ | - |
-| 🌐 Internet | Active | - |
+### Installation
 
-</div>
+1. **Clone or download this repository**
+   ```bash
+   git clone https://github.com/yourusername/hikari-tiktok-downloader.git
+   cd hikari-tiktok-downloader
+   ```
 
-### Method 1: Automatic Setup (Recommended)
+2. **Run the setup script**
+   ```bash
+   python setup.py
+   ```
+
+3. **Launch the application**
+   ```bash
+   python main.py
+   ```
+
+### Manual Installation
+
+If the setup script doesn't work, install dependencies manually:
 
 ```bash
-# Clone the repository
-git clone https://github.com/Gary19gts/Hikari-TikTok-Downloader.git
-cd Hikari-TikTok-Downloader
-
-# Run setup
-python setup.py
-
-# Launch application
+pip install customtkinter pillow yt-dlp requests pathlib2
 python main.py
 ```
-
-### Method 2: Manual Installation
-
-```bash
-# Install dependencies
-pip install customtkinter pillow yt-dlp requests
-
-# Run the application
-python main.py
-```
-
-### Method 3: Windows Quick Start
-
-```bash
-# Double-click run.bat
-# That's it! Dependencies install automatically
-```
-
----
 
 ## 🎯 Usage
 
+1. **Paste TikTok URL** - Copy any TikTok video URL and paste it in the input field
+2. **Select Engine** - Choose your preferred download engine (yt-dlp recommended)
+3. **Choose Quality** - Select video quality based on your needs
+4. **Set Output Folder** - Choose where to save downloaded content
+5. **Download** - Click the download button and watch the progress
+
 ### Supported URL Formats
 
-<div align="center">
+- `https://www.tiktok.com/@username/video/1234567890`
+- `https://vm.tiktok.com/ZMxxxxxxx/`
+- `https://www.tiktok.com/t/ZTxxxxxxx/`
+- Mobile TikTok URLs
 
-| Format | Example | Status |
-|--------|---------|--------|
-| Standard | `https://www.tiktok.com/@username/video/1234567890` | ✅ Supported |
-| Short URL | `https://vm.tiktok.com/ZMxxxxxxx/` | ✅ Supported |
-| Share Link | `https://www.tiktok.com/t/ZTxxxxxxx/` | ✅ Supported |
-| Mobile | `https://m.tiktok.com/v/1234567890.html` | ✅ Supported |
+## 🔧 Download Engines
 
-</div>
+### yt-dlp (Recommended)
+- **Advantages**: Highest success rate, multiple quality options, regular updates, **watermark-free downloads**
+- **Best for**: Reliable downloads with maximum compatibility and clean content without TikTok watermarks
 
-### Download Engines Comparison
+### TikTok API
+- **Advantages**: Faster download speed, lower resource usage, direct API access
+- **Best for**: Quick downloads when yt-dlp is unavailable (may include watermarks)
 
-<table>
-<tr>
-<th width="50%">🏆 YT-DLP Engine (Recommended)</th>
-<th width="50%">⚡ TikTok API Engine</th>
-</tr>
-<tr>
-<td>
+## 📁 Project Structure
 
-**Advantages:**
-- ✅ Highest success rate (95%+)
-- ✅ **Watermark-free downloads**
-- ✅ Multiple quality options
-- ✅ Regular updates
-- ✅ Most reliable
+```
+hikari-tiktok-downloader/
+├── main.py                 # Main application
+├── engines/                # Download engines
+│   ├── yt_dlp_engine.py   # yt-dlp implementation
+│   └── tiktok_api_engine.py # TikTok API implementation
+├── ui/                     # User interface components
+│   ├── components.py       # Custom UI components
+│   └── styles.py          # Modern design constants
+├── utils/                  # Utility modules
+│   ├── validator.py        # URL validation
+│   └── logger.py          # Logging system
+├── logs/                   # Application logs
+├── requirements.txt        # Dependencies
+├── setup.py               # Setup script
+└── README.md              # This file
+```
 
-**Best for:**
-- High-quality content
-- Watermark-free videos
-- Maximum compatibility
-
-</td>
-<td>
-
-**Advantages:**
-- ✅ Faster download speed
-- ✅ Lower resource usage
-- ✅ Direct API access
-- ✅ Lightweight
-
-**Best for:**
-- Quick downloads
-- When yt-dlp is unavailable
-- Lower bandwidth situations
-
-</td>
-</tr>
-</table>
-
----
-
-## 📖 Documentation
-
-<div align="center">
-
-| Document | Description |
-|----------|-------------|
-| 📘 [**INSTRUCTIONS.md**](INSTRUCTIONS.md) | Complete step-by-step guide |
-| ❓ [**FAQ.md**](FAQ.md) | Frequently asked questions |
-| 🔒 [**SECURITY.md**](SECURITY.md) | Security policy and reporting |
-| 📄 [**DUAL_LICENSING_DETAILS.txt**](DUAL_LICENSING_DETAILS.txt) | Licensing information |
-| 🎬 [**PRESENTATION.txt**](PRESENTATION.txt) | Project presentation |
-| 📝 [**CHANGELOG.md**](CHANGELOG.md) | Version history |
-
-</div>
-
----
-
-## 🎨 Screenshots
-
-<div align="center">
-
-### Main Interface
-<img src="hikari_icon.png" alt="Hikari Main Interface" width="600">
-
-*Clean, modern interface with TikTok-themed colors*
-
----
-
-### Download in Progress
-<img src="hikari_icon.png" alt="Download Progress" width="600">
-
-*Real-time progress tracking with speed indicators*
-
-</div>
-
----
-
-## 🛠️ Technical Specifications
-
-<div align="center">
-
-### Built With
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-<br><strong>Python 3.7+</strong>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/CustomTkinter-00D9FF?style=for-the-badge" alt="CustomTkinter">
-<br><strong>CustomTkinter</strong>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/yt--dlp-FF0000?style=for-the-badge" alt="yt-dlp">
-<br><strong>yt-dlp</strong>
-</td>
-<td align="center" width="25%">
-<img src="https://img.shields.io/badge/Pillow-00A98F?style=for-the-badge" alt="Pillow">
-<br><strong>Pillow</strong>
-</td>
-</tr>
-</table>
-
-### System Requirements
-
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 10+, macOS 10.14+, Linux (Ubuntu 18.04+) |
-| **Python** | 3.7 or higher |
-| **RAM** | 100MB minimum |
-| **Storage** | 50MB for application + space for downloads |
-| **Internet** | Required for downloads |
-
-</div>
-
----
-
-## 🔄 Version History
-
-<div align="center">
-
-| Version | Date | Highlights |
-|---------|------|------------|
-| **1.2.0** | Oct 2025 | 🎯 Best quality only, 🎨 TikTok cyan console |
-| **1.0.1** | Oct 2025 | 🎨 Modern TikTok theme, 📄 Dual licensing |
-| **1.0.0** | Oct 2025 | 🚀 Initial stable release |
-
-</div>
-
----
-
-## ❓ FAQ
-
-<details>
-<summary><strong>Is Hikari free to use?</strong></summary>
-<br>
-Yes! Hikari is free for personal use under the AGPLv3 license. Commercial use requires a separate license.
-</details>
-
-<details>
-<summary><strong>Can I download videos without watermarks?</strong></summary>
-<br>
-Yes! When using the yt-dlp engine (recommended), videos are downloaded without TikTok watermarks.
-</details>
-
-<details>
-<summary><strong>What video quality can I download?</strong></summary>
-<br>
-Hikari automatically downloads in the highest available quality, up to 1080p.
-</details>
-
-<details>
-<summary><strong>Is it safe to use?</strong></summary>
-<br>
-Absolutely! Hikari doesn't collect any personal data, doesn't track usage, and only connects to TikTok for downloads.
-</details>
-
-<details>
-<summary><strong>Can I download private videos?</strong></summary>
-<br>
-No, Hikari can only download publicly available videos. Private or deleted videos cannot be accessed.
-</details>
-
-<details>
-<summary><strong>Does it work on my operating system?</strong></summary>
-<br>
-Yes! Hikari works on Windows, macOS, and Linux with Python 3.7+.
-</details>
-
----
-
-## ⚠️ Legal Notice
-
-<div align="center">
-
-### 📜 Important: Responsible Use
+## ⚠️ Important Legal Notice
 
 **This application is designed for downloading your own content or content you have explicit permission to download.**
 
-</div>
+- Only download content you own or have permission to use
+- Respect copyright laws and TikTok's Terms of Service
+- The developers are not responsible for misuse of this tool
+- This tool follows the principle of "tool neutrality" - the responsibility lies with the user
 
-<table>
-<tr>
-<td width="50%">
+## 🛠️ Troubleshooting
 
-### ✅ Acceptable Use
-- Download your own TikTok videos
-- Download content with creator's permission
-- Personal backup of your content
-- Educational purposes (with permission)
-- Fair use scenarios
+### Common Issues
 
-</td>
-<td width="50%">
+1. **"No module named 'customtkinter'"**
+   ```bash
+   pip install customtkinter
+   ```
 
-### ❌ Prohibited Use
-- Downloading copyrighted content without permission
-- Redistributing downloaded content
-- Commercial use without proper licensing
-- Violating TikTok's Terms of Service
-- Any illegal activities
+2. **Download fails with yt-dlp**
+   - Try updating yt-dlp: `pip install --upgrade yt-dlp`
+   - Switch to TikTok API engine
+   - Check the diagnostics logs
 
-</td>
-</tr>
-</table>
+3. **GUI doesn't appear**
+   - Ensure you have a display available
+   - Try running with: `python -m tkinter` to test Tkinter
 
-<div align="center">
+4. **Permission errors**
+   - Run as administrator (Windows) or with sudo (Linux/Mac)
+   - Check output folder permissions
 
-**Users are responsible for complying with copyright laws and TikTok's Terms of Service.**
+### Getting Help
 
-</div>
+1. Check the **Diagnostics** section in the app for detailed logs
+2. Look at the log files in the `logs/` directory
+3. Ensure your TikTok URL is valid and accessible
 
----
+## 🔄 Updates
 
-## 🤝 Contributing
+- **v1.2.0** (October 2025)
+  - Settings persistence - remembers last download location
+  - Default folder button for quick reset
+  - Enhanced user experience improvements
+- **v1.0.0** (October 2025)
+  - Stable release with modern clean UI
+  - Multiple download engines with watermark-free downloads
+  - Real-time progress tracking
+  - Automatic library updates
+  - Ko-fi support integration
 
-<div align="center">
+## 👨‍💻 Credits
 
-We welcome contributions! However, please note:
-
-- This is primarily a personal project
-- Feature requests are considered but not guaranteed
-- Bug reports are always appreciated
-- Code contributions should follow the existing style
-
-### How to Contribute
-
-1. 🍴 Fork the repository
-2. 🔧 Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. 💾 Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. 📤 Push to the branch (`git push origin feature/AmazingFeature`)
-5. 🎉 Open a Pull Request
-
-</div>
-
----
+**Hikari TikTok Downloader v1.2.0**  
+**October 2025**  
+**Made by: Gary19gts**
 
 ## 📄 License
 
-<div align="center">
+This project is dual-licensed under AGPL v3 (for open source use) and Proprietary License (for commercial use) - see the LICENSE file for details.
 
-### Dual Licensing Model
+## 🤝 Contributing
 
-<table>
-<tr>
-<th width="50%">🆓 Open Source (AGPLv3)</th>
-<th width="50%">💼 Commercial License</th>
-</tr>
-<tr>
-<td>
-
-**Free for:**
-- Personal use
-- Open source projects
-- Educational purposes
-- Non-commercial use
-
-**Requirements:**
-- Share source code
-- Keep same license
-- Provide attribution
-
-</td>
-<td>
-
-**Required for:**
-- Commercial software
-- Proprietary applications
-- SaaS products
-- Closed-source integration
-
-**Contact:**
-- Ko-fi: [gary19gts](https://ko-fi.com/gary19gts)
-- Flexible terms available
-
-</td>
-</tr>
-</table>
-
-See [LICENSE](LICENSE) and [DUAL_LICENSING_DETAILS.txt](DUAL_LICENSING_DETAILS.txt) for complete information.
-
-</div>
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
 ## 💝 Support the Project
 
-<div align="center">
+Thank you for using **Hikari TikTok Downloader**!  
+Made with ❤️ by Gary19gts  
 
-### Thank you for using **Hikari TikTok Downloader**!
+If Hikari has been helpful to you, please consider supporting its development:  
 
-<img src="hikari_icon.png" alt="Hikari Icon" width="100">
+☕ **Buy me a coffee on Ko-fi** → [https://ko-fi.com/gary19gts](https://ko-fi.com/gary19gts)  
 
-**Made with ❤️ by [Gary19gts](https://github.com/Gary19gts)**
+✨ Even the smallest donation can bring a big light during these tough times.  
+Even $1 can help more than you think 😀🙏
 
----
-
-If Hikari has been helpful to you, please consider supporting its development:
-
-<a href="https://ko-fi.com/gary19gts" target="_blank">
-  <img src="https://img.shields.io/badge/☕_Buy_me_a_coffee-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Buy me a coffee">
-</a>
+Thank you so much for standing with me! ✨
 
 ---
 
-### ✨ Why Support?
-
-<table>
-<tr>
-<td align="center" width="33%">
-<h3>🚀</h3>
-<strong>Continued Development</strong>
-<br>
-<sub>New features and improvements</sub>
-</td>
-<td align="center" width="33%">
-<h3>🐛</h3>
-<strong>Bug Fixes & Updates</strong>
-<br>
-<sub>Keep the app working smoothly</sub>
-</td>
-<td align="center" width="33%">
-<h3>💡</h3>
-<strong>Free for Everyone</strong>
-<br>
-<sub>Keep it free for personal use</sub>
-</td>
-</tr>
-</table>
-
----
-
-### 💖 Even the smallest donation can bring a big light during these tough times.
-
-**Even $1 can help more than you think** 😀🙏
-
----
-
-### Other Ways to Support
-
-<table>
-<tr>
-<td align="center" width="25%">
-⭐<br><strong>Star this repo</strong>
-</td>
-<td align="center" width="25%">
-🔄<br><strong>Share with friends</strong>
-</td>
-<td align="center" width="25%">
-🐛<br><strong>Report bugs</strong>
-</td>
-<td align="center" width="25%">
-💬<br><strong>Spread the word</strong>
-</td>
-</tr>
-</table>
-
----
-
-**Thank you so much for standing with me!** ✨
-
-</div>
-
----
-
-## 👨‍💻 Author
-
-<div align="center">
-
-<img src="hikari_icon.png" alt="Gary19gts" width="100" style="border-radius: 50%;">
-
-### Gary19gts
-
-**Developer & Creator of Hikari TikTok Downloader**
-
-<a href="https://github.com/Gary19gts">
-  <img src="https://img.shields.io/badge/GitHub-Gary19gts-181717?style=for-the-badge&logo=github" alt="GitHub">
-</a>
-<a href="https://ko-fi.com/gary19gts">
-  <img src="https://img.shields.io/badge/Ko--fi-gary19gts-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white" alt="Ko-fi">
-</a>
-
----
-
-**Hikari TikTok Downloader v1.2.0**  
-*October 2025*
-
-</div>
-
----
-
-## 🌟 Star History
-
-<div align="center">
-
-[![Star History Chart](https://api.star-history.com/svg?repos=Gary19gts/Hikari-TikTok-Downloader&type=Date)](https://star-history.com/#Gary19gts/Hikari-TikTok-Downloader&Date)
-
-</div>
-
----
-
-## 📊 Project Stats
-
-<div align="center">
-
-![GitHub repo size](https://img.shields.io/github/repo-size/Gary19gts/Hikari-TikTok-Downloader?style=for-the-badge)
-![GitHub code size](https://img.shields.io/github/languages/code-size/Gary19gts/Hikari-TikTok-Downloader?style=for-the-badge)
-![GitHub language count](https://img.shields.io/github/languages/count/Gary19gts/Hikari-TikTok-Downloader?style=for-the-badge)
-![GitHub top language](https://img.shields.io/github/languages/top/Gary19gts/Hikari-TikTok-Downloader?style=for-the-badge)
-
-</div>
-
----
-
-<div align="center">
-
-### 🎉 Thank you for choosing Hikari TikTok Downloader!
-
-**Simple • Fast • Reliable**
-
----
-
-**Remember:** Always respect content creators' rights and platform terms of service.
-
-Happy downloading! 🎬✨
-
----
-
-<sub>Made with ❤️ and ☕ by Gary19gts</sub>
-
-</div>
+**Remember**: Always respect content creators' rights and platform terms of service. Happy downloading! 🎉
